@@ -131,7 +131,6 @@ app.get('/info', (request, response) => {
 })
 
 app.get('/health', (request, response) => {
-    throw new Error('Error')
     response.send('ok')
 })
 
