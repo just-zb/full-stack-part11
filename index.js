@@ -131,7 +131,8 @@ app.get('/info', (request, response) => {
 })
 
 app.get('/health', (request, response) => {
-  response.send('ok')
+    throw new Error('Error')
+    response.send('ok')
 })
 
 const unknownEndpoint = (request, response) => {
