@@ -130,6 +130,10 @@ app.get('/info', (request, response) => {
 
 })
 
+app.get('/health', (request, response) => {
+  response.send('ok')
+})
+
 const unknownEndpoint = (request, response) => {
   console.log('Unknown endpoint')
   response.status(404).send({ error: 'Unknown endpoint' })

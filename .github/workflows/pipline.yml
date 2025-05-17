@@ -45,3 +45,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG_PREFIX: 'v'
           DEFAULT_BUMP: 'patch'
+          INITIAL_VERSION: '0.0.1'
